@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Client Lead Management System</h1>
+
+    <form id="leadForm">
+
+        <input type="text" id="name" placeholder="Client Name" required>
+
+        <input type="email" id="email" placeholder="Email" required>
+
+        <input type="text" id="source" placeholder="Lead Source">
+
+        <select id="status">
+            <option>New</option>
+            <option>Contacted</option>
+            <option>Converted</option>
+        </select>
+
+        <textarea id="notes" placeholder="Notes">
+</textarea>
+
+        <button type="submit">
+            Add Lead
+        </button>
+
+    </form>
+
+    <h2>Lead List</h2>
+
+    <ul id="leadList"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
